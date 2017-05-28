@@ -60,10 +60,10 @@
 - Практика: обоснованный выбор покрытия и реализация поддерживаемых системных UI-тестов для legacy веб-приложения с контролем покрытия через Sonar
 - Надстройки над Selenium: Фукудид, HtmlElements, [Selenide](http://ru.selenide.org/quick-start.html)
 
-### BDD на [Cucumber](http://www.dokwork.ru/2015/08/cucumber.html)
+### BDD на [Cucumber](https://cucumber.io/docs/reference/jvm)
 - Что такое тестовый DSL? И почему BDD не про библиотеки и фреймворки.
 - Как тестовый DSL помогает ускорить разработку и поддержку тестов? Или не помогает.
 - Как фреймворк может нам помочь в разработке и поддержке тестового DSL?
-- Как писать тест на Cucumber DSL?
+- Как [писать тест](http://www.dokwork.ru/2015/08/cucumber.html) на Cucumber DSL?
 - Как отобразить тестовый Cucumber DSL на java-код?
 - Практика: перенос готовых системных UI-тестов на Cucumber BDD
