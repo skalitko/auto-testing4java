@@ -7,7 +7,8 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.phantomjs.PhantomJSDriver;
+
+import static org.fest.assertions.api.Assertions.assertThat;
 
 
 public class YandexWeatherTest {
@@ -36,10 +37,14 @@ public class YandexWeatherTest {
 
     @Test
     public void shouldGetWeatherForMoscow() throws InterruptedException {
-        WebElement weatherLink = driver.findElement(By.linkText("Погода"));
-        weatherLink.click();
-        WebElement detailedWeather = driver.findElement(By.xpath("//label[span[a[span[text()='подробно']]]]"));
-        detailedWeather.click();
-        driver.findElement(By.xpath("//*[text()='ночью']"));
+        YandexWeatherPage weatherPage = new YandexWeatherPage(driver);
+        YandexWeatherDetailedPage weatherDetailedPage = weatherPage
+                .clickOnWeatherLink();
+
+        WebElement nightWeather = weatherDetailedPage
+                .detailedWeatherClick()
+                .getNightWeather();
+
+        assertThat(nightWeather.getText()).contains("Ночью");
     }
 }

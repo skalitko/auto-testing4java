@@ -58,6 +58,7 @@
 - Как работать из теста с асинхронными элементами? [Fluent API for Wait](https://github.com/bonigarcia/webdrivermanager-examples/blob/master/src/test/java/io/github/bonigarcia/wdm/test/PhatomJsTest.java)
 - Как обеспечить поддерживаемость тестов: изоляцию от структуры страниц, от переходов между страницам? PageObject [1](https://habrahabr.ru/post/134462/),[2](https://github.com/SeleniumHQ/selenium/wiki/PageFactory) и [StepObject](http://seleniumcamp.com/archive/selenium-camp-2013/materials/step-objects/)
 - Практика: обоснованный выбор покрытия и реализация поддерживаемых системных UI-тестов для legacy веб-приложения с контролем покрытия через Sonar
+- Надстройки над Selenium: Фукудид, HtmlElements, [Selenide](http://ru.selenide.org/quick-start.html)
 
 ### BDD на Cucumber
 - Что такое тестовый DSL? И почему BDD не про библиотеки и фреймворки.
