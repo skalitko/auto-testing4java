@@ -46,6 +46,8 @@
 
 ### Системное UI-тестирование на [Selenium](https://kreisfahrer.gitbooks.io/selenium-webdriver/content/index.html)
 - Как можно покрыть тестами UI системы?
+- Понятие драйвера. Пример с [Chrome](http://www.kenst.com/2015/03/installing-chromedriver-on-mac-osx/)
+- Упрощение работы с драйверами с [webdrivermanager](https://github.com/bonigarcia/webdrivermanager)
 - Можно ли не запускать браузер в процессе UI-тестирования?
 - Какова типичная структура системного UI-теста?
 - Демо: автогенерация Selenium-теста из записи действий пользователя
@@ -53,7 +55,7 @@
 - Как обеспечить переход по URL?
 - Как обеспечить локализацию элементов на HTML-странице?
 - Как обеспечить ввод в HTML-элементы ввода?
-- Как работать из теста с асинхронными элементами?
+- Как работать из теста с асинхронными элементами? [Fluent API for Wait](https://github.com/bonigarcia/webdrivermanager-examples/blob/master/src/test/java/io/github/bonigarcia/wdm/test/PhatomJsTest.java)
 - Как обеспечить поддерживаемость тестов: изоляцию от структуры страниц, от переходов между страницам?
 - Практика: обоснованный выбор покрытия и реализация поддерживаемых системных UI-тестов для legacy веб-приложения с контролем покрытия через Sonar
 

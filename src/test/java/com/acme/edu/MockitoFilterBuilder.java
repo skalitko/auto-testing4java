@@ -33,8 +33,9 @@ public class MockitoFilterBuilder {
             mockToReturn = mock(LoggerFilter.class);
         }
 
-        when(mockToReturn.withFiltering()).thenReturn(withFiltering);
-        when(mockToReturn.withLogging()).thenReturn(withLogging);
-        return mockToReturn;
+//        when(mockToReturn.withFiltering()).thenReturn(withFiltering);
+//        when(mockToReturn.withLogging()).thenReturn(withLogging);
+//        return mockToReturn;
+        return null;
     }
 }

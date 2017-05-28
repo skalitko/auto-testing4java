@@ -38,16 +38,12 @@ public class LoggerTest {
 
     }
 
-    @Test
+    @Test @Ignore
     public void shouldLogWhenFilterPass() {
         sut = new Logger(
-                new MockitoFilterBuilder()
-                    .isSpy(true)
-                    .withLogging(false)
-                .build(),
-                MockitoSaverBuilder
-                    .withFormatterFormatString("vggg")
-
+                null, null
+//                MockitoSaverBuilder
+//                    .withFormatterFormatString("vggg")
         );
 
         sut.log("test message");
