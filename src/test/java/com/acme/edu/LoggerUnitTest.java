@@ -16,7 +16,6 @@ import static org.mockito.Mockito.*;
 public class LoggerUnitTest {
     private LoggerFilter filterStub;
 
-
     @Test
     public void shouldDoLogWhenErrorMessage() {
         DataSource connectionFactoryStub =
@@ -24,9 +23,14 @@ public class LoggerUnitTest {
                     .withConnection()
                     .withStatement("SQL1")
                         .withResultSet()
-                            .withRecord("column2:value1")
-                            .withRecord("column3:value2")
-                            .withRecord("column3:value3")
+                            .withRecord()
+                                .withField("column1").withValue("value1")
+                            .withRecord()
+                                .withField("column2").withValue("value2")
+                            .withRecord()
+                                .withField("column3").withValue("value3")
+                    .withStatement("SQL2")
+                        .withEmptyRusult()
                 .build();
 
         new BusinessLogicComponent(connectionFactoryStub);
