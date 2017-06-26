@@ -1,7 +1,7 @@
 package com.acme.edu;
 
 public class Logger {
-    private LoggerFilter loggerFilter;
+    private LoggerFilter loggerFilter; //DI
     private LoggerSaver loggerSaver;
 
     public Logger(LoggerFilter loggerFilter, LoggerSaver loggerSaver) {
