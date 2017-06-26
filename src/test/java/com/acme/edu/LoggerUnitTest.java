@@ -19,16 +19,19 @@ public class LoggerUnitTest {
     @Test
     public void shouldDoLogWhenErrorMessage() {
         DataSource connectionFactoryStub =
-                new ConnectionFactoryMockitoStubBuilder()
-                    .withConnection()
+            new ConnectionFactoryMockitoStubBuilder()
+                .withConnection()
                     .withStatement("SQL1")
                         .withResultSet()
                             .withRecord()
                                 .withField("column1").withValue("value1")
-                            .withRecord()
                                 .withField("column2").withValue("value2")
                             .withRecord()
-                                .withField("column3").withValue("value3")
+                                .withField("column1").withValue("value2")
+                                .withField("column2").withValue("value2")
+                            .withRecord()
+                                .withField("column1").withValue("value3")
+                                .withField("column2").withValue("value3")
                     .withStatement("SQL2")
                         .withEmptyRusult()
                 .build();
