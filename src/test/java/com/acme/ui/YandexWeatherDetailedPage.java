@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 public class YandexWeatherDetailedPage {
     private WebDriver driver;
 
-    @FindBy(xpath = "//label[span[a[span[text()='подробно']]]]")
+    @FindBy(linkText = "Подробный прогноз на 10 дней") //xpath = "//label[span[a[span[text()='Подробный прогноз на 10 дней']]]]")
     private WebElement detailedWeather;
 
     public YandexWeatherDetailedPage(WebDriver driver) {
