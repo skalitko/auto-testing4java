@@ -4,6 +4,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 import io.github.bonigarcia.wdm.ChromeDriverManager;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
@@ -17,4 +18,5 @@ import org.junit.runner.RunWith;
                 "html:target/cucumber-htmlreport"
         }
 )
+@Ignore
 public class YandexWeatherTest {}
