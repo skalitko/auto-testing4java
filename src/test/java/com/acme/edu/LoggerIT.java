@@ -4,7 +4,7 @@ import org.junit.Test;
 
 public class LoggerIT {
     @Test //BDD = DDD + test
-    public void shouldLogSuccessfullyWhenStateandParamIsNotNull() { //Counter Anti-pattern
+    public void shouldLogSuccessfullyWhenStateAndParamIsNotNull() { //Counter Anti-pattern
 
     }
 }
